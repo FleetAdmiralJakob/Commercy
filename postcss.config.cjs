@@ -4,7 +4,9 @@ const config = {
     autoprefixer: {},
     cssnano: {
         preset: "default",
-    }
+    },
+    precsss: {
+    },
   },
 };
 

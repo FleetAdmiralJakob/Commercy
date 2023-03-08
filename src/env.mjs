@@ -63,8 +63,8 @@ if (!!process.env.SKIP_ENV_VALIDATION === false) {
 
   const parsed = /** @type {MergedSafeParseReturn} */ (
     isServer
-      ? merged.safeParse(processEnv) // on server we can validate all env vars
-      : client.safeParse(processEnv) // on client we can only validate the ones that are exposed
+      ? merged.safeParse(processEnv) // on server, we can validate all env vars
+      : client.safeParse(processEnv) // on client, we can only validate the ones that are exposed
   );
 
   if (parsed.success === false) {
