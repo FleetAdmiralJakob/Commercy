@@ -2,10 +2,13 @@ import React from "react"
 import Head from "next/head";
 import Link from "next/link";
 import {signIn, signOut, useSession} from "next-auth/react";
-import {api} from "~/utils/api";
 
-// @ts-ignore
-const Layout = ({title, children}) => {
+interface LayoutProps {
+    title?: string;
+    children: React.ReactNode;
+}
+
+const Layout:  React.FC<LayoutProps> = ({title, children}) => {
     const date = new Date();
     const year = date.getFullYear();
     return (
