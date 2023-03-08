@@ -22,9 +22,10 @@ const Layout:  React.FC<LayoutProps> = ({title, children}) => {
         <div className="flex min-h-screen flex-col justify-between shadow-md">
             <header>
                 <nav className="flex h-20 items-center px-4 justify-between shadow-md">
-                    <Link className="text-lg font-bold" href="/">
-                        Com<span className="text-[hsl(280,100%,70%)]">mercy</span>
-                    </Link>
+                        <Link className="text-lg font-bold flex items-center" href="/">
+                            <img src="assets/images/logo.webp" alt="Logo" className="h-16 m-5"/>
+                            Com<span className="text-[hsl(280,100%,70%)]">mercy</span>
+                        </Link>
                     <AuthShowcase />
                 </nav>
             </header>
