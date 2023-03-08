@@ -17,6 +17,7 @@ specifiers:
   '@types/react-dom': ^18.0.11
   '@typescript-eslint/eslint-plugin': ^5.53.0
   '@typescript-eslint/parser': ^5.53.0
+  '@vercel/analytics': ^0.1.11
   autoprefixer: ^10.4.7
   aws-amplify: ^5.0.18
   cssnano: ^5.1.15
@@ -47,6 +48,7 @@ dependencies:
   '@trpc/next': 10.14.0_x6gg3jfwfdz6xcek5wczo75xfu
   '@trpc/react-query': 10.14.0_gqzahltmmgiv44m4moyfehsu6m
   '@trpc/server': 10.14.0
+  '@vercel/analytics': 0.1.11_react@18.2.0
   aws-amplify: 5.0.18
   next: 13.2.3_biqbaboplfbrettd7655fr4n2y
   next-auth: 4.20.1_nvzgbose6yf6w7ijjprgspqefi
@@ -3818,6 +3820,14 @@ packages:
       '@typescript-eslint/types': 5.54.0
       eslint-visitor-keys: 3.3.0
     dev: true
+
+  /@vercel/analytics/0.1.11_react@18.2.0:
+    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@xstate/react/3.0.0_pmekkgnqduwlme35zpnqhenc34:
     resolution: {integrity: sha512-KHSCfwtb8gZ7QH2luihvmKYI+0lcdHQOmGNRUxUEs4zVgaJCyd8csCEmwPsudpliLdUmyxX2pzUBojFkINpotw==}
