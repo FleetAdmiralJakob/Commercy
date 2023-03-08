@@ -4,6 +4,7 @@ import Link from "next/link";
 import {signIn, signOut, useSession} from "next-auth/react";
 import {api} from "~/utils/api";
 
+// @ts-ignore
 const Layout = ({title, children}) => {
     const date = new Date();
     const year = date.getFullYear();
