@@ -7,8 +7,10 @@ const Home: NextPage = () => {
     <>
       <Layout title="Home">
         <div className="flex flex-col items-center">
-          <h1 className="text-9xl font-bold gradient-text gradient-text-blue">Commercy</h1>
-            <p className="text-2xl font-bold">A wonderful E-Commerce website</p>
+          <h1 className="text-9xl font-bold gradient-text gradient-text-blue">
+            Commercy
+          </h1>
+          <p className="text-2xl font-bold">A wonderful E-Commerce website</p>
         </div>
       </Layout>
     </>
@@ -16,5 +18,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
-
