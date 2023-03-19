@@ -64,3 +64,19 @@ model VerificationToken {
 
   @@unique([identifier, token])
 }
+
+model Product {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  name         String
+  slug         String   @unique
+  description  String
+  image        String
+  categories   String[]
+  price        Float
+  brand        String?
+  rating       Float
+  numReviews   Int
+  countInStock String
+  isFeatured   Boolean
+  banner       String?
+}
