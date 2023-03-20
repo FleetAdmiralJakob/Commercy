@@ -1,5 +1,21 @@
 import prisma from ".";
 
+interface Product {
+    name: string;
+    slug: string;
+    description: string;
+    image: string;
+    categories: string[];
+    price: number;
+    brand?: string;
+    rating: number;
+    numReviews: number;
+    countInStock: string;
+    isFeatured: boolean;
+    banner?: string;
+}
+
+
 export const getProducts = async () => {
     try {
         const products = await prisma.product.findMany();
@@ -9,7 +25,7 @@ export const getProducts = async () => {
     }
 }
 
-export const createProduct = async (product:any) => {
+export const createProduct = async (product : Product) => {
     try {
         const productFromDB = await prisma.product.create({ data: product })
         return { product: productFromDB };
